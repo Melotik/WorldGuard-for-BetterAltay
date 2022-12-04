@@ -63,7 +63,7 @@ class Utils {
         $pk->gamemode = $player->getGamemode() & 0x01;
         $player->dataPacket($pk);
         $player->setFlying(false);
-        $player->sendAbilites();
+        $player->sendAbilities();
     }
 
     public static function gm2string(int $gm) : string
